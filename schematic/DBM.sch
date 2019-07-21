@@ -1,0 +1,154 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 2 6
+Title "Diode Ring Mixer"
+Date "2019-07-16"
+Rev "0.1"
+Comp "mzIndustry/cnsit"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Transformer_1P_SS T?
+U 1 1 5D2DB058
+P 4350 3350
+F 0 "T?" H 4350 3750 50  0000 C CNN
+F 1 "BN2402-43" H 4350 3650 50  0000 C CNN
+F 2 "" H 4350 3350 50  0001 C CNN
+F 3 "~" H 4350 3350 50  0001 C CNN
+	1    4350 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_ALT D?
+U 1 1 5D2DC222
+P 5200 3150
+F 0 "D?" V 5250 3050 50  0000 R CNN
+F 1 "1N60" V 5150 3050 50  0000 R CNN
+F 2 "" H 5200 3150 50  0001 C CNN
+F 3 "~" H 5200 3150 50  0001 C CNN
+	1    5200 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_ALT D?
+U 1 1 5D2DD118
+P 5200 3550
+F 0 "D?" V 5250 3450 50  0000 R CNN
+F 1 "1N60" V 5150 3450 50  0000 R CNN
+F 2 "" H 5200 3550 50  0001 C CNN
+F 3 "~" H 5200 3550 50  0001 C CNN
+	1    5200 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_ALT D?
+U 1 1 5D2DD77B
+P 5800 3550
+F 0 "D?" V 5850 3450 50  0000 R CNN
+F 1 "1N60" V 5750 3450 50  0000 R CNN
+F 2 "" H 5800 3550 50  0001 C CNN
+F 3 "~" H 5800 3550 50  0001 C CNN
+	1    5800 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_ALT D?
+U 1 1 5D2DD785
+P 5800 3150
+F 0 "D?" V 5850 3050 50  0000 R CNN
+F 1 "1N60" V 5750 3050 50  0000 R CNN
+F 2 "" H 5800 3150 50  0001 C CNN
+F 3 "~" H 5800 3150 50  0001 C CNN
+	1    5800 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5200 3000 5200 2950
+Wire Wire Line
+	5200 2950 5800 2950
+Wire Wire Line
+	5800 2950 5800 3000
+Wire Wire Line
+	5200 3300 5200 3350
+Wire Wire Line
+	5800 3300 5800 3350
+Wire Wire Line
+	5200 3700 5200 3750
+Wire Wire Line
+	5200 3750 5800 3750
+Wire Wire Line
+	5800 3750 5800 3700
+Wire Wire Line
+	4750 3150 4800 3150
+Wire Wire Line
+	4800 3150 4800 2950
+Wire Wire Line
+	4800 2950 5200 2950
+Connection ~ 5200 2950
+Wire Wire Line
+	4750 3550 4800 3550
+Wire Wire Line
+	4800 3550 4800 3750
+Wire Wire Line
+	4800 3750 5200 3750
+Connection ~ 5200 3750
+$Comp
+L Device:Transformer_1P_SS T?
+U 1 1 5D2E0821
+P 5500 4500
+F 0 "T?" V 5550 4750 50  0000 L CNN
+F 1 "BN2402-43" V 5500 4750 50  0000 L CNN
+F 2 "" H 5500 4500 50  0001 C CNN
+F 3 "~" H 5500 4500 50  0001 C CNN
+	1    5500 4500
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5300 4100 5300 4050
+Wire Wire Line
+	5300 4050 5050 4050
+Wire Wire Line
+	5050 4050 5050 3350
+Wire Wire Line
+	5050 3350 5200 3350
+Connection ~ 5200 3350
+Wire Wire Line
+	5200 3350 5200 3400
+Wire Wire Line
+	5800 3350 5950 3350
+Wire Wire Line
+	5950 3350 5950 4050
+Wire Wire Line
+	5950 4050 5700 4050
+Wire Wire Line
+	5700 4050 5700 4100
+Connection ~ 5800 3350
+Wire Wire Line
+	5800 3350 5800 3400
+Text HLabel 5500 4050 1    50   BiDi ~ 0
+IF
+Wire Wire Line
+	5500 4050 5500 4100
+Text HLabel 3900 3150 0    50   Input ~ 0
+LO
+Wire Wire Line
+	3900 3150 3950 3150
+Text HLabel 3900 3550 0    50   UnSpc ~ 0
+COMM
+Wire Wire Line
+	3900 3550 3950 3550
+Text HLabel 5300 4950 3    50   UnSpc ~ 0
+COMM
+Wire Wire Line
+	5300 4950 5300 4900
+Text HLabel 5700 4950 3    50   BiDi ~ 0
+RF
+Wire Wire Line
+	5700 4950 5700 4900
+$EndSCHEMATC
