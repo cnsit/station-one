@@ -1,122 +1,94 @@
 EESchema Schematic File Version 4
+LIBS:station-one-cache
 EELAYER 29 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr User 7874 5906
 encoding utf-8
-Sheet 5 6
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
+Sheet 5 10
+Title "Audio Low Pass Filter"
+Date "2019-07-27"
+Rev "v0.1"
+Comp "mzIndustry/cnsit"
+Comment1 "5kHz bandwidth"
+Comment2 "Need to be well teminated with 50Ω"
 Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
 L Device:C C?
 U 1 1 5D2EFCD1
-P 3900 3750
-F 0 "C?" H 4050 3800 50  0000 L CNN
-F 1 "0.33u" H 4050 3700 50  0000 L CNN
-F 2 "" H 3938 3600 50  0001 C CNN
-F 3 "~" H 3900 3750 50  0001 C CNN
-	1    3900 3750
+P 3250 2650
+F 0 "C?" H 3400 2700 50  0000 L CNN
+F 1 "1u" H 3400 2600 50  0000 L CNN
+F 2 "" H 3288 2500 50  0001 C CNN
+F 3 "~" H 3250 2650 50  0001 C CNN
+	1    3250 2650
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:L_Core_Ferrite L?
 U 1 1 5D2F20CE
-P 4250 3500
-F 0 "L?" V 4500 3500 50  0000 C CNN
-F 1 "1.6mH" V 4400 3500 50  0000 C CNN
-F 2 "" H 4250 3500 50  0001 C CNN
-F 3 "~" H 4250 3500 50  0001 C CNN
-	1    4250 3500
+P 3600 2400
+F 0 "L?" V 3850 2400 50  0000 C CNN
+F 1 "1mH" V 3750 2400 50  0000 C CNN
+F 2 "" H 3600 2400 50  0001 C CNN
+F 3 "~" H 3600 2400 50  0001 C CNN
+	1    3600 2400
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:C C?
-U 1 1 5D2F3329
-P 4600 3750
-F 0 "C?" H 4750 3800 50  0000 L CNN
-F 1 "0.33u" H 4750 3700 50  0000 L CNN
-F 2 "" H 4638 3600 50  0001 C CNN
-F 3 "~" H 4600 3750 50  0001 C CNN
-	1    4600 3750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	3900 3600 3900 3500
+	3250 2500 3250 2400
 Wire Wire Line
-	3900 3500 4100 3500
+	3250 2400 3450 2400
 Wire Wire Line
-	4400 3500 4600 3500
+	3250 2800 3250 2900
 Wire Wire Line
-	4600 3500 4600 3600
-Wire Wire Line
-	3900 3900 3900 4000
-Wire Wire Line
-	3900 4000 4250 4000
-Wire Wire Line
-	4600 4000 4600 3900
-Text HLabel 4250 4100 3    50   UnSpc ~ 0
+	3250 2900 3800 2900
+Text HLabel 3800 3000 3    50   UnSpc ~ 0
 COMM
 Wire Wire Line
-	4250 4100 4250 4000
-Connection ~ 4250 4000
-Wire Wire Line
-	4250 4000 4600 4000
-Text HLabel 3400 3500 0    50   BiDi ~ 0
+	3800 3000 3800 2900
+Connection ~ 3800 2900
+Text HLabel 3000 2400 0    50   BiDi ~ 0
 In
-Wire Wire Line
-	3400 3500 3550 3500
-Connection ~ 3900 3500
-Text HLabel 5200 3500 2    50   BiDi ~ 0
+Connection ~ 3250 2400
+Text HLabel 4550 2400 2    50   BiDi ~ 0
 Out
 Wire Wire Line
-	5200 3500 5100 3500
-Connection ~ 4600 3500
+	3000 2400 3250 2400
 $Comp
-L Device:R R?
-U 1 1 5D312C82
-P 3550 3750
-F 0 "R?" H 3650 3800 50  0000 L CNN
-F 1 "50" H 3650 3700 50  0000 L CNN
-F 2 "" V 3480 3750 50  0001 C CNN
-F 3 "~" H 3550 3750 50  0001 C CNN
-	1    3550 3750
+L Device:L_Core_Ferrite L?
+U 1 1 5D3DB65B
+P 4000 2400
+F 0 "L?" V 4250 2400 50  0000 C CNN
+F 1 "1mH" V 4150 2400 50  0000 C CNN
+F 2 "" H 4000 2400 50  0001 C CNN
+F 3 "~" H 4000 2400 50  0001 C CNN
+	1    4000 2400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4150 2400 4300 2400
+$Comp
+L Device:C C?
+U 1 1 5D3DBD60
+P 4300 2650
+F 0 "C?" H 4450 2700 50  0000 L CNN
+F 1 "1u" H 4450 2600 50  0000 L CNN
+F 2 "" H 4338 2500 50  0001 C CNN
+F 3 "~" H 4300 2650 50  0001 C CNN
+	1    4300 2650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3550 3600 3550 3500
-Connection ~ 3550 3500
+	4300 2500 4300 2400
+Connection ~ 4300 2400
 Wire Wire Line
-	3550 3500 3900 3500
+	4300 2400 4550 2400
 Wire Wire Line
-	3550 3900 3550 4000
+	4300 2800 4300 2900
 Wire Wire Line
-	3550 4000 3900 4000
-Connection ~ 3900 4000
-$Comp
-L Device:R R?
-U 1 1 5D313886
-P 5100 3750
-F 0 "R?" H 5200 3800 50  0000 L CNN
-F 1 "50" H 5200 3700 50  0000 L CNN
-F 2 "" V 5030 3750 50  0001 C CNN
-F 3 "~" H 5100 3750 50  0001 C CNN
-	1    5100 3750
-	1    0    0    -1  
-$EndComp
+	3750 2400 3850 2400
 Wire Wire Line
-	5100 3600 5100 3500
-Connection ~ 5100 3500
-Wire Wire Line
-	5100 3500 4600 3500
-Wire Wire Line
-	5100 3900 5100 4000
-Wire Wire Line
-	5100 4000 4600 4000
-Connection ~ 4600 4000
+	3800 2900 4300 2900
 $EndSCHEMATC

@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:station-one-cache
 EELAYER 29 0
 EELAYER END
-$Descr A 11000 8500
+$Descr User 7874 5906
 encoding utf-8
-Sheet 3 6
+Sheet 3 10
 Title "Key Shaping"
 Date "2019-07-16"
 Rev "0.1"
@@ -16,99 +17,99 @@ $EndDescr
 $Comp
 L Transistor_FET:BS170 Q?
 U 1 1 5D2E6B7A
-P 5500 4050
-F 0 "Q?" H 5750 4100 50  0000 L CNN
-F 1 "BS170" H 5750 4000 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5700 3975 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BS/BS170.pdf" H 5500 4050 50  0001 L CNN
-	1    5500 4050
+P 4050 2850
+F 0 "Q?" H 4300 2900 50  0000 L CNN
+F 1 "BS170" H 4300 2800 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4250 2775 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BS/BS170.pdf" H 4050 2850 50  0001 L CNN
+	1    4050 2850
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Transistor_BJT:TIP42 Q?
 U 1 1 5D2E7E4F
-P 4650 3750
-F 0 "Q?" H 4850 3700 50  0000 L CNN
-F 1 "TIP42" H 4850 3800 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4900 3675 50  0001 L CIN
-F 3 "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=TIP42.PDF" H 4650 3750 50  0001 L CNN
-	1    4650 3750
+P 3200 2550
+F 0 "Q?" H 3400 2500 50  0000 L CNN
+F 1 "TIP42" H 3400 2600 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 3450 2475 50  0001 L CIN
+F 3 "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=TIP42.PDF" H 3200 2550 50  0001 L CNN
+	1    3200 2550
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 5D2E9091
-P 5200 3750
-F 0 "R?" V 4950 3750 50  0000 C CNN
-F 1 "1k" V 5050 3750 50  0000 C CNN
-F 2 "" V 5130 3750 50  0001 C CNN
-F 3 "~" H 5200 3750 50  0001 C CNN
-	1    5200 3750
+P 3750 2550
+F 0 "R?" V 3500 2550 50  0000 C CNN
+F 1 "1k" V 3600 2550 50  0000 C CNN
+F 2 "" V 3680 2550 50  0001 C CNN
+F 3 "~" H 3750 2550 50  0001 C CNN
+	1    3750 2550
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 5D2E97C2
-P 4750 3450
-F 0 "R?" V 4500 3450 50  0000 C CNN
-F 1 "470" V 4600 3450 50  0000 C CNN
-F 2 "" V 4680 3450 50  0001 C CNN
-F 3 "~" H 4750 3450 50  0001 C CNN
-	1    4750 3450
+P 3300 2250
+F 0 "R?" V 3050 2250 50  0000 C CNN
+F 1 "470" V 3150 2250 50  0000 C CNN
+F 2 "" V 3230 2250 50  0001 C CNN
+F 3 "~" H 3300 2250 50  0001 C CNN
+	1    3300 2250
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 5D2EA165
-P 4750 4050
-F 0 "C?" V 4500 4050 50  0000 C CNN
-F 1 "1u" V 4600 4050 50  0000 C CNN
-F 2 "" H 4788 3900 50  0001 C CNN
-F 3 "~" H 4750 4050 50  0001 C CNN
-	1    4750 4050
+P 3300 2850
+F 0 "C?" V 3050 2850 50  0000 C CNN
+F 1 "1u" V 3150 2850 50  0000 C CNN
+F 2 "" H 3338 2700 50  0001 C CNN
+F 3 "~" H 3300 2850 50  0001 C CNN
+	1    3300 2850
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4550 3550 4550 3450
+	3100 2350 3100 2250
 Wire Wire Line
-	4550 3450 4600 3450
+	3100 2250 3150 2250
 Wire Wire Line
-	4850 3750 4950 3750
+	3400 2550 3500 2550
 Wire Wire Line
-	4900 3450 4950 3450
+	3450 2250 3500 2250
 Wire Wire Line
-	4950 3450 4950 3750
-Connection ~ 4950 3750
+	3500 2250 3500 2550
+Connection ~ 3500 2550
 Wire Wire Line
-	4950 3750 5050 3750
+	3500 2550 3600 2550
 Wire Wire Line
-	4900 4050 4950 4050
+	3450 2850 3500 2850
 Wire Wire Line
-	4950 4050 4950 3750
+	3500 2850 3500 2550
 Wire Wire Line
-	4550 3950 4550 4050
+	3100 2750 3100 2850
 Wire Wire Line
-	4550 4050 4600 4050
+	3100 2850 3150 2850
 Wire Wire Line
-	5350 3750 5400 3750
+	3900 2550 3950 2550
 Wire Wire Line
-	5400 3750 5400 3850
-Text HLabel 5400 4300 3    50   UnSpc ~ 0
+	3950 2550 3950 2650
+Text HLabel 3950 3100 3    50   UnSpc ~ 0
 COMM
 Wire Wire Line
-	5400 4250 5400 4300
-Text HLabel 4550 3400 1    50   Input ~ 0
+	3950 3050 3950 3100
+Text HLabel 3100 2200 1    50   Input ~ 0
 Vcc
 Wire Wire Line
-	4550 3400 4550 3450
-Connection ~ 4550 3450
-Text HLabel 4550 4100 3    50   Output ~ 0
+	3100 2200 3100 2250
+Connection ~ 3100 2250
+Text HLabel 3100 2900 3    50   Output ~ 0
 Vout
 Wire Wire Line
-	4550 4100 4550 4050
-Connection ~ 4550 4050
-Text HLabel 5750 4050 2    50   Input ~ 0
+	3100 2900 3100 2850
+Connection ~ 3100 2850
+Text HLabel 4300 2850 2    50   Input ~ 0
 KEY-EN
 Wire Wire Line
-	5750 4050 5700 4050
+	4300 2850 4250 2850
 $EndSCHEMATC
