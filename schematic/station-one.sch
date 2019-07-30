@@ -94,9 +94,12 @@ F5 "Vctl" I L 14100 8050 50
 F6 "Out" I R 14750 7750 50 
 $EndSheet
 $Sheet
-S 16200 7950 950  450 
+S 16200 7900 750  350 
 U 5D4912A1
 F0 "Audio In" 50
 F1 "audio input.sch" 50
+F2 "COMM" U R 16950 8150 50 
+F3 "Vcc" I L 16200 8150 50 
+F4 "Out" I R 16950 8000 50 
 $EndSheet
 $EndSCHEMATC
