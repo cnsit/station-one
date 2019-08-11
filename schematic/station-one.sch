@@ -25,14 +25,13 @@ F4 "COMM" U R 29300 3250 50
 F5 "RF" B L 28700 3100 50 
 $EndSheet
 $Sheet
-S 37300 1100 600  350 
+S 35150 3250 600  350 
 U 5D2E6A14
 F0 "key-shaping" 50
 F1 "Key-Shaping.sch" 50
-F2 "COMM" U R 37900 1350 50 
-F3 "Vcc" I L 37300 1200 50 
-F4 "Vout" O L 37300 1350 50 
-F5 "KEY-EN" I R 37900 1200 50 
+F2 "COMM" U R 35750 3500 50 
+F3 "Vcc" I L 35150 3350 50 
+F4 "Vout" O L 35150 3500 50 
 $EndSheet
 $Sheet
 S 33000 2500 650  350 
@@ -84,13 +83,16 @@ F5 "Vctl" I L 25350 2600 50
 F6 "Out" I R 26000 2300 50 
 $EndSheet
 $Sheet
-S 33000 3100 650  350 
+S 33000 3100 650  500 
 U 5D4912A1
 F0 "Audio In" 50
 F1 "audio input.sch" 50
 F2 "COMM" U L 33000 3350 50 
-F3 "Vcc" I R 33650 3350 50 
+F3 "Vcc" I R 33650 3500 50 
 F4 "Out" I L 33000 3200 50 
+F5 "Vrx" I R 33650 3200 50 
+F6 "Vtx" I R 33650 3350 50 
+F7 "CW" I L 33000 3500 50 
 $EndSheet
 $Comp
 L Relay:G5V-1 K?
@@ -629,4 +631,24 @@ Text GLabel 28300 3100 0    50   Input ~ 0
 DetLO
 Wire Wire Line
 	28300 3100 28700 3100
+Text GLabel 33750 3200 2    50   Input ~ 0
+Rx
+Wire Wire Line
+	33750 3200 33650 3200
+Text GLabel 32900 3500 0    50   Input ~ 0
+CW
+Wire Wire Line
+	32900 3500 33000 3500
+Text GLabel 35050 3500 0    50   Input ~ 0
+CW
+Wire Wire Line
+	35050 3500 35150 3500
+Text GLabel 33750 3500 2    50   Input ~ 0
+Vcc
+Wire Wire Line
+	33750 3500 33650 3500
+Text GLabel 35050 3350 0    50   Input ~ 0
+Vcc
+Wire Wire Line
+	35050 3350 35150 3350
 $EndSCHEMATC

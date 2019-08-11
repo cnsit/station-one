@@ -94,10 +94,8 @@ Wire Wire Line
 	3900 2550 3950 2550
 Wire Wire Line
 	3950 2550 3950 2650
-Text HLabel 3950 3100 3    50   UnSpc ~ 0
+Text HLabel 3950 3250 3    50   UnSpc ~ 0
 COMM
-Wire Wire Line
-	3950 3050 3950 3100
 Text HLabel 3100 2200 1    50   Input ~ 0
 Vcc
 Wire Wire Line
@@ -108,8 +106,42 @@ Vout
 Wire Wire Line
 	3100 2900 3100 2850
 Connection ~ 3100 2850
-Text HLabel 4300 2850 2    50   Input ~ 0
-KEY-EN
 Wire Wire Line
-	4300 2850 4250 2850
+	4900 2850 4400 2850
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5D66DEEB
+P 5100 2950
+F 0 "J?" H 5050 2600 50  0000 C CNN
+F 1 "Key" H 5050 2700 50  0000 C CNN
+F 2 "" H 5100 2950 50  0001 C CNN
+F 3 "~" H 5100 2950 50  0001 C CNN
+	1    5100 2950
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D66FD27
+P 4400 3000
+F 0 "R?" H 4400 3300 50  0000 C CNN
+F 1 "10k" H 4400 3200 50  0000 C CNN
+F 2 "" V 4330 3000 50  0001 C CNN
+F 3 "~" H 4400 3000 50  0001 C CNN
+	1    4400 3000
+	-1   0    0    1   
+$EndComp
+Connection ~ 4400 2850
+Wire Wire Line
+	4400 2850 4250 2850
+Wire Wire Line
+	3950 3150 3950 3250
+Wire Wire Line
+	3950 3050 3950 3150
+Connection ~ 3950 3150
+Wire Wire Line
+	3950 3150 4400 3150
+Text HLabel 4800 2950 0    50   Input ~ 0
+Vcc
+Wire Wire Line
+	4800 2950 4900 2950
 $EndSCHEMATC
