@@ -2,12 +2,12 @@ EESchema Schematic File Version 4
 LIBS:station-one-cache
 EELAYER 29 0
 EELAYER END
-$Descr User 39370 5906
+$Descr User 39370 31497
 encoding utf-8
-Sheet 1 21
+Sheet 1 25
 Title "station-one"
 Date "2019-07-16"
-Rev "0.1"
+Rev "0.2"
 Comp "mzIndustry/cnsit"
 Comment1 "Architect"
 Comment2 ""
@@ -996,5 +996,11 @@ S 5100 2250 700  350
 U 5D65A104
 F0 "SWR" 50
 F1 "SWR.sch" 50
+$EndSheet
+$Sheet
+S 20150 10200 2400 1750
+U 5D5C6594
+F0 "Sheet5D5C6593" 50
+F1 "audio.sch" 50
 $EndSheet
 $EndSCHEMATC

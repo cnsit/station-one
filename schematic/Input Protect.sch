@@ -1,0 +1,168 @@
+EESchema Schematic File Version 4
+LIBS:station-one-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 24 25
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:CP C?
+U 1 1 5E79AB67
+P 5700 3200
+AR Path="/5D4912A1/5E79AB67" Ref="C?"  Part="1" 
+AR Path="/5D5C6594/5E79AB67" Ref="C?"  Part="1" 
+AR Path="/5D5C6594/5E798CC9/5E79AB67" Ref="C?"  Part="1" 
+AR Path="/5D5C6594/5E84D4B1/5E79AB67" Ref="C?"  Part="1" 
+AR Path="/5D5C6594/5E96EFBD/5E79AB67" Ref="C?"  Part="1" 
+AR Path="/5D5C6594/5EAECF72/5E79AB67" Ref="C?"  Part="1" 
+F 0 "C?" V 5450 3100 50  0000 L CNN
+F 1 "100u" V 5550 3100 50  0000 L CNN
+F 2 "" H 5738 3050 50  0001 C CNN
+F 3 "~" H 5700 3200 50  0001 C CNN
+	1    5700 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener_ALT D?
+U 1 1 5E79AB6D
+P 5350 3800
+AR Path="/5D4912A1/5E79AB6D" Ref="D?"  Part="1" 
+AR Path="/5D5C6594/5E79AB6D" Ref="D?"  Part="1" 
+AR Path="/5D5C6594/5E798CC9/5E79AB6D" Ref="D?"  Part="1" 
+AR Path="/5D5C6594/5E84D4B1/5E79AB6D" Ref="D?"  Part="1" 
+AR Path="/5D5C6594/5E96EFBD/5E79AB6D" Ref="D?"  Part="1" 
+AR Path="/5D5C6594/5EAECF72/5E79AB6D" Ref="D?"  Part="1" 
+F 0 "D?" V 5300 3900 50  0000 L CNN
+F 1 "3v" V 5400 3900 50  0000 L CNN
+F 2 "" H 5350 3800 50  0001 C CNN
+F 3 "~" H 5350 3800 50  0001 C CNN
+	1    5350 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener_ALT D?
+U 1 1 5E79AB73
+P 5350 3450
+AR Path="/5D4912A1/5E79AB73" Ref="D?"  Part="1" 
+AR Path="/5D5C6594/5E79AB73" Ref="D?"  Part="1" 
+AR Path="/5D5C6594/5E798CC9/5E79AB73" Ref="D?"  Part="1" 
+AR Path="/5D5C6594/5E84D4B1/5E79AB73" Ref="D?"  Part="1" 
+AR Path="/5D5C6594/5E96EFBD/5E79AB73" Ref="D?"  Part="1" 
+AR Path="/5D5C6594/5EAECF72/5E79AB73" Ref="D?"  Part="1" 
+F 0 "D?" V 5400 3250 50  0000 L CNN
+F 1 "3v" V 5300 3250 50  0000 L CNN
+F 2 "" H 5350 3450 50  0001 C CNN
+F 3 "~" H 5350 3450 50  0001 C CNN
+	1    5350 3450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5350 3200 5350 3300
+Wire Wire Line
+	5350 3200 5550 3200
+Wire Wire Line
+	5350 3600 5350 3650
+Wire Wire Line
+	5350 3950 5350 4000
+$Comp
+L Device:R R?
+U 1 1 5E79AB7D
+P 4250 3200
+AR Path="/5D4912A1/5E79AB7D" Ref="R?"  Part="1" 
+AR Path="/5D5C6594/5E79AB7D" Ref="R?"  Part="1" 
+AR Path="/5D5C6594/5E798CC9/5E79AB7D" Ref="R?"  Part="1" 
+AR Path="/5D5C6594/5E84D4B1/5E79AB7D" Ref="R?"  Part="1" 
+AR Path="/5D5C6594/5E96EFBD/5E79AB7D" Ref="R?"  Part="1" 
+AR Path="/5D5C6594/5EAECF72/5E79AB7D" Ref="R?"  Part="1" 
+F 0 "R?" V 4450 3200 50  0000 L CNN
+F 1 "1k" V 4350 3150 50  0000 L CNN
+F 2 "" V 4180 3200 50  0001 C CNN
+F 3 "~" H 4250 3200 50  0001 C CNN
+	1    4250 3200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4800 3200 5050 3200
+Connection ~ 5350 3200
+$Comp
+L Device:CP C?
+U 1 1 5E79AB85
+P 4650 3200
+AR Path="/5D4912A1/5E79AB85" Ref="C?"  Part="1" 
+AR Path="/5D5C6594/5E79AB85" Ref="C?"  Part="1" 
+AR Path="/5D5C6594/5E798CC9/5E79AB85" Ref="C?"  Part="1" 
+AR Path="/5D5C6594/5E84D4B1/5E79AB85" Ref="C?"  Part="1" 
+AR Path="/5D5C6594/5E96EFBD/5E79AB85" Ref="C?"  Part="1" 
+AR Path="/5D5C6594/5EAECF72/5E79AB85" Ref="C?"  Part="1" 
+F 0 "C?" V 4900 3200 50  0000 L CNN
+F 1 "100u" V 4800 3100 50  0000 L CNN
+F 2 "" H 4688 3050 50  0001 C CNN
+F 3 "~" H 4650 3200 50  0001 C CNN
+	1    4650 3200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4400 3200 4500 3200
+Wire Wire Line
+	5850 3200 6000 3200
+$Comp
+L power:GND #PWR?
+U 1 1 5E79AB8D
+P 5350 4050
+AR Path="/5D5C6594/5E79AB8D" Ref="#PWR?"  Part="1" 
+AR Path="/5D5C6594/5E798CC9/5E79AB8D" Ref="#PWR?"  Part="1" 
+AR Path="/5D5C6594/5E84D4B1/5E79AB8D" Ref="#PWR?"  Part="1" 
+AR Path="/5D5C6594/5E96EFBD/5E79AB8D" Ref="#PWR?"  Part="1" 
+AR Path="/5D5C6594/5EAECF72/5E79AB8D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5350 3800 50  0001 C CNN
+F 1 "GND" H 5500 4000 50  0000 C CNN
+F 2 "" H 5350 4050 50  0001 C CNN
+F 3 "" H 5350 4050 50  0001 C CNN
+	1    5350 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3200 4100 3200
+Text HLabel 4000 3200 0    79   Input ~ 0
+In
+Text HLabel 6000 3200 2    79   Input ~ 0
+Out
+$Comp
+L Device:R R?
+U 1 1 5E79EC5C
+P 5050 3650
+AR Path="/5D4912A1/5E79EC5C" Ref="R?"  Part="1" 
+AR Path="/5D5C6594/5E79EC5C" Ref="R?"  Part="1" 
+AR Path="/5D5C6594/5E798CC9/5E79EC5C" Ref="R?"  Part="1" 
+AR Path="/5D5C6594/5E84D4B1/5E79EC5C" Ref="R?"  Part="1" 
+AR Path="/5D5C6594/5E96EFBD/5E79EC5C" Ref="R?"  Part="1" 
+AR Path="/5D5C6594/5EAECF72/5E79EC5C" Ref="R?"  Part="1" 
+F 0 "R?" H 5300 3600 50  0000 L CNN
+F 1 "1Meg" H 5200 3700 50  0000 L CNN
+F 2 "" V 4980 3650 50  0001 C CNN
+F 3 "~" H 5050 3650 50  0001 C CNN
+	1    5050 3650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5050 3500 5050 3200
+Connection ~ 5050 3200
+Wire Wire Line
+	5050 3200 5350 3200
+Wire Wire Line
+	5050 3800 5050 4000
+Wire Wire Line
+	5050 4000 5350 4000
+Connection ~ 5350 4000
+Wire Wire Line
+	5350 4000 5350 4050
+$EndSCHEMATC

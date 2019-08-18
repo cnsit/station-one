@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr User 7874 5906
 encoding utf-8
-Sheet 7 21
+Sheet 7 25
 Title "Post Mixer Amplifier"
 Date "2019-07-29"
 Rev "v0.1"
