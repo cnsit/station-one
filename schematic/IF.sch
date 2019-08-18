@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 18
+Sheet 9 21
 Title "IF Amplifier"
 Date "2019-07-29"
 Rev "v0.1"

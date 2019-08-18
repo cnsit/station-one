@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr User 7874 5906
 encoding utf-8
-Sheet 4 18
+Sheet 4 21
 Title "LM386"
 Date "2019-07-16"
 Rev "0.1"

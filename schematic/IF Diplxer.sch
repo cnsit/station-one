@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr User 7874 5906
 encoding utf-8
-Sheet 6 18
+Sheet 6 21
 Title "IF Diplxer"
 Date "2019-07-16"
 Rev "0.1"
