@@ -1,0 +1,194 @@
+EESchema Schematic File Version 4
+LIBS:station-one-cache
+EELAYER 29 0
+EELAYER END
+$Descr User 7874 5906
+encoding utf-8
+Sheet 11 21
+Title "BFO"
+Date "2019-08-03"
+Rev "v0.1"
+Comp "mzIndustry/cnsit"
+Comment1 "BFO Support"
+Comment2 "Power Divider & LP Filter"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R?
+U 1 1 5D45DC53
+P 2400 2200
+F 0 "R?" H 2500 2250 50  0000 L CNN
+F 1 "50" H 2500 2150 50  0000 L CNN
+F 2 "" V 2330 2200 50  0001 C CNN
+F 3 "~" H 2400 2200 50  0001 C CNN
+	1    2400 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D45E2F4
+P 2650 1950
+F 0 "R?" V 2850 1900 50  0000 L CNN
+F 1 "50" V 2750 1900 50  0000 L CNN
+F 2 "" V 2580 1950 50  0001 C CNN
+F 3 "~" H 2650 1950 50  0001 C CNN
+	1    2650 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D45E8B6
+P 2650 2450
+F 0 "R?" V 2850 2400 50  0000 L CNN
+F 1 "50" V 2750 2400 50  0000 L CNN
+F 2 "" V 2580 2450 50  0001 C CNN
+F 3 "~" H 2650 2450 50  0001 C CNN
+	1    2650 2450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2400 2050 2400 1950
+Wire Wire Line
+	2400 1950 2500 1950
+Wire Wire Line
+	2400 2350 2400 2450
+Wire Wire Line
+	2400 2450 2500 2450
+Wire Wire Line
+	2800 1950 2900 1950
+Wire Wire Line
+	2900 1950 2900 2250
+Wire Wire Line
+	2900 2450 2800 2450
+$Comp
+L Device:C C?
+U 1 1 5D461392
+P 3200 2500
+F 0 "C?" H 3350 2550 50  0000 L CNN
+F 1 "330p" H 3350 2450 50  0000 L CNN
+F 2 "" H 3238 2350 50  0001 C CNN
+F 3 "~" H 3200 2500 50  0001 C CNN
+	1    3200 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 5D461A4E
+P 3450 2250
+F 0 "L?" V 3700 2250 50  0000 C CNN
+F 1 "1u" V 3600 2250 50  0000 C CNN
+F 2 "" H 3450 2250 50  0001 C CNN
+F 3 "~" H 3450 2250 50  0001 C CNN
+	1    3450 2250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D462B0C
+P 3700 2500
+F 0 "C?" H 3850 2550 50  0000 L CNN
+F 1 "330p" H 3850 2450 50  0000 L CNN
+F 2 "" H 3738 2350 50  0001 C CNN
+F 3 "~" H 3700 2500 50  0001 C CNN
+	1    3700 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 2250 3700 2250
+Wire Wire Line
+	3700 2250 3700 2350
+Wire Wire Line
+	3300 2250 3200 2250
+Connection ~ 2900 2250
+Wire Wire Line
+	2900 2250 2900 2450
+Wire Wire Line
+	3200 2350 3200 2250
+Connection ~ 3200 2250
+Wire Wire Line
+	3200 2250 2900 2250
+Wire Wire Line
+	3200 2650 3200 2700
+Wire Wire Line
+	3700 2700 3700 2650
+Wire Wire Line
+	3200 2700 3450 2700
+Text HLabel 3450 2750 3    50   UnSpc ~ 0
+COMM
+Wire Wire Line
+	3450 2750 3450 2700
+Connection ~ 3450 2700
+Wire Wire Line
+	3450 2700 3700 2700
+$Comp
+L Device:R R?
+U 1 1 5D4638ED
+P 4450 2250
+F 0 "R?" V 4650 2200 50  0000 L CNN
+F 1 "37" V 4550 2200 50  0000 L CNN
+F 2 "" V 4380 2250 50  0001 C CNN
+F 3 "~" H 4450 2250 50  0001 C CNN
+	1    4450 2250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D463FBF
+P 4700 2500
+F 0 "R?" H 4800 2550 50  0000 L CNN
+F 1 "150" H 4800 2450 50  0000 L CNN
+F 2 "" V 4630 2500 50  0001 C CNN
+F 3 "~" H 4700 2500 50  0001 C CNN
+	1    4700 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D4645E2
+P 4150 2500
+F 0 "R?" H 4250 2550 50  0000 L CNN
+F 1 "150" H 4250 2450 50  0000 L CNN
+F 2 "" V 4080 2500 50  0001 C CNN
+F 3 "~" H 4150 2500 50  0001 C CNN
+	1    4150 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 2250 4150 2250
+Wire Wire Line
+	4150 2250 4150 2350
+Wire Wire Line
+	4150 2250 3700 2250
+Connection ~ 4150 2250
+Connection ~ 3700 2250
+Wire Wire Line
+	4600 2250 4700 2250
+Wire Wire Line
+	4700 2250 4700 2350
+Wire Wire Line
+	3700 2700 4150 2700
+Wire Wire Line
+	4700 2700 4700 2650
+Connection ~ 3700 2700
+Wire Wire Line
+	4150 2650 4150 2700
+Connection ~ 4150 2700
+Wire Wire Line
+	4150 2700 4700 2700
+Text HLabel 2300 1950 0    50   Output ~ 0
+OUT1
+Text HLabel 2300 2450 0    50   Output ~ 0
+OUT2
+Wire Wire Line
+	2300 1950 2400 1950
+Connection ~ 2400 1950
+Wire Wire Line
+	2400 2450 2300 2450
+Connection ~ 2400 2450
+Text HLabel 4750 2250 2    50   Input ~ 0
+IN
+Wire Wire Line
+	4750 2250 4700 2250
+Connection ~ 4700 2250
+$EndSCHEMATC

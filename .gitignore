@@ -50,3 +50,13 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+*.bak
+schematic/fp-info-cache
+schematic/_autosave-station-one.sch
+*.raw
+*.log
+*.net
+*.fft
+~*.*
+output
+*.kicad_pcb-bak

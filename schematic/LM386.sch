@@ -1,0 +1,217 @@
+EESchema Schematic File Version 4
+LIBS:station-one-cache
+EELAYER 29 0
+EELAYER END
+$Descr User 7874 5906
+encoding utf-8
+Sheet 4 21
+Title "LM386"
+Date "2019-07-16"
+Rev "0.1"
+Comp "mzIndustry/cnsit"
+Comment1 "No anti-hiss, it will oscillator"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Audio:LM386 U?
+U 1 1 5D2EF663
+P 3600 2350
+F 0 "U?" H 3750 2650 50  0000 L CNN
+F 1 "LM386" H 3750 2550 50  0000 L CNN
+F 2 "" H 3700 2450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm386.pdf" H 3800 2550 50  0001 C CNN
+	1    3600 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D2F9C4B
+P 4100 2650
+F 0 "C?" H 4250 2700 50  0000 L CNN
+F 1 "0.1u" H 4250 2600 50  0000 L CNN
+F 2 "" H 4138 2500 50  0001 C CNN
+F 3 "~" H 4100 2650 50  0001 C CNN
+	1    4100 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D2FAA96
+P 4100 3050
+F 0 "R?" H 4200 3100 50  0000 L CNN
+F 1 "10" H 4200 3000 50  0000 L CNN
+F 2 "" V 4030 3050 50  0001 C CNN
+F 3 "~" H 4100 3050 50  0001 C CNN
+	1    4100 3050
+	1    0    0    -1  
+$EndComp
+Text HLabel 3150 2700 0    50   UnSpc ~ 0
+COMM
+Wire Wire Line
+	3500 2650 3500 2700
+Wire Wire Line
+	3500 2700 3250 2700
+Wire Wire Line
+	3250 2700 3250 2450
+Connection ~ 3250 2450
+Wire Wire Line
+	3250 2450 3300 2450
+Wire Wire Line
+	4100 2350 4100 2500
+Wire Wire Line
+	4100 2800 4100 2900
+$Comp
+L Device:CP C?
+U 1 1 5D2FB6C7
+P 4400 2350
+F 0 "C?" V 4700 2350 50  0000 C CNN
+F 1 "220u" V 4600 2350 50  0000 C CNN
+F 2 "" H 4438 2200 50  0001 C CNN
+F 3 "~" H 4400 2350 50  0001 C CNN
+	1    4400 2350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4250 2350 4100 2350
+Connection ~ 4100 2350
+Text HLabel 4700 2350 2    50   Output ~ 0
+Out
+Text HLabel 4100 3250 3    50   UnSpc ~ 0
+COMM
+Wire Wire Line
+	4100 3200 4100 3250
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 5D2FD0BB
+P 2550 2250
+F 0 "J?" H 2200 2000 50  0000 C CNN
+F 1 "Vol. Pot" H 2450 2000 50  0000 C CNN
+F 2 "" H 2550 2250 50  0001 C CNN
+F 3 "~" H 2550 2250 50  0001 C CNN
+	1    2550 2250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2750 2350 3250 2350
+Wire Wire Line
+	3250 2350 3250 2450
+Wire Wire Line
+	3300 2250 2750 2250
+Text HLabel 2850 2150 2    50   Input ~ 0
+In
+Wire Wire Line
+	2850 2150 2750 2150
+Text HLabel 3500 1350 1    50   Input ~ 0
+Vcc
+Wire Wire Line
+	3500 1350 3500 1450
+$Comp
+L Device:C C?
+U 1 1 5D2FE6E7
+P 3250 1650
+F 0 "C?" H 3400 1700 50  0000 L CNN
+F 1 "0.1u" H 3400 1600 50  0000 L CNN
+F 2 "" H 3288 1500 50  0001 C CNN
+F 3 "~" H 3250 1650 50  0001 C CNN
+	1    3250 1650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5D2FFBAD
+P 2800 1650
+F 0 "C?" H 2650 1600 50  0000 R CNN
+F 1 "100u" H 2650 1700 50  0000 R CNN
+F 2 "" H 2838 1500 50  0001 C CNN
+F 3 "~" H 2800 1650 50  0001 C CNN
+	1    2800 1650
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2800 1800 2800 1850
+Wire Wire Line
+	2800 1850 3250 1850
+Wire Wire Line
+	3250 1850 3250 1800
+Wire Wire Line
+	2800 1500 2800 1450
+Wire Wire Line
+	2800 1450 3250 1450
+Connection ~ 3500 1450
+Wire Wire Line
+	3500 1450 3500 2050
+Wire Wire Line
+	3250 1500 3250 1450
+Connection ~ 3250 1450
+Wire Wire Line
+	3250 1450 3500 1450
+Connection ~ 3250 2700
+Text HLabel 3250 1900 3    50   UnSpc ~ 0
+COMM
+Wire Wire Line
+	3250 1900 3250 1850
+Connection ~ 3250 1850
+$Comp
+L Device:C C?
+U 1 1 5D3048CF
+P 3200 3200
+F 0 "C?" V 3450 3150 50  0000 L CNN
+F 1 "10u" V 3350 3150 50  0000 L CNN
+F 2 "" H 3238 3050 50  0001 C CNN
+F 3 "~" H 3200 3200 50  0001 C CNN
+	1    3200 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D30509F
+P 3200 2950
+F 0 "R?" V 3300 2500 50  0000 L CNN
+F 1 "1.2k" V 3200 2500 50  0000 L CNN
+F 2 "" V 3130 2950 50  0001 C CNN
+F 3 "~" H 3200 2950 50  0001 C CNN
+	1    3200 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3050 2950 3000 2950
+Wire Wire Line
+	3000 2950 3000 3200
+Wire Wire Line
+	3000 3200 3050 3200
+Wire Wire Line
+	3700 2650 3700 3200
+Wire Wire Line
+	3350 2950 3600 2950
+Wire Wire Line
+	3600 2650 3600 2950
+$Comp
+L Device:CP C?
+U 1 1 5D308252
+P 3800 1850
+F 0 "C?" V 4100 1850 50  0000 C CNN
+F 1 "10u" V 4000 1850 50  0000 C CNN
+F 2 "" H 3838 1700 50  0001 C CNN
+F 3 "~" H 3800 1850 50  0001 C CNN
+	1    3800 1850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3600 2050 3600 1850
+Wire Wire Line
+	3600 1850 3650 1850
+Text HLabel 4000 1850 2    50   UnSpc ~ 0
+COMM
+Wire Wire Line
+	4000 1850 3950 1850
+Wire Wire Line
+	3350 3200 3700 3200
+Wire Wire Line
+	3150 2700 3250 2700
+Wire Wire Line
+	3900 2350 4100 2350
+Wire Wire Line
+	4550 2350 4700 2350
+$EndSCHEMATC
